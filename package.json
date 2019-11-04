@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "firebase": "^7.2.2",
+    "dotenv": "^8.2.0",
+    "firebase": "^7.2.3",
     "firebaseui": "^4.2.0",
     "query-string": "^6.8.3",
     "react": "^16.11.0",
@@ -11,11 +12,12 @@
     "react-firebaseui": "^4.0.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
+    "recompose": "^0.30.0",
     "styled-components": "^4.4.0"
   },
   "scripts": {
-    "start": "cross-env NODE_PATH=src react-scripts start",
-    "build": "cross-env NODE_PATH=src react-scripts build",
+    "start": "cross-env NODE_PATH=src react-scripts start .env",
+    "build": "cross-env NODE_PATH=src react-scripts build && firebase deploy",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
