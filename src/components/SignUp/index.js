@@ -38,7 +38,7 @@ class SignUpFromBase extends Component {
       .then(authUser => {
         return this.props.firebase
           .user(authUser.user.uid)
-          .set({ username, email, phone, role});
+          .set({ username, email, phone, role });
       })
       .then(authUser => {
         this.setState({ ...INITIAL_STATE });

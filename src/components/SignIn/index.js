@@ -59,14 +59,14 @@ class SignInFormBase extends Component {
           value={email}
           onChange={this.onChange}
           type="text"
-          placeholder="이메일 주소"
+          placeholder="  이메일을 입력해 주세요"
         />
         <input
           name="password"
           value={password}
           onChange={this.onChange}
           type="password"
-          placeholder="비밀번호"
+          placeholder="  비밀번호를 입력해 주세요"
         />
         <button disabled={isInvalid} type="submit">
           로그인
